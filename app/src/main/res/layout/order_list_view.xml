@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fragment_product_confirmation_margin"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="@dimen/fragment_product_confirmation_margin"
+        android:src="@drawable/order_confirmed"
+        android:id="@+id/order_icon"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_id"
+        android:text="1234567"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="@dimen/fragment_order_management_text"
+        android:textColor="@color/content_text"
+        android:layout_margin="@dimen/fragment_product_confirmation_margin"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name"
+        android:text="Canon 060D - Fix "
+        android:gravity="left"
+        android:layout_weight="3"
+        android:singleLine="true"
+        android:textSize="@dimen/fragment_order_management_text"
+        android:textColor="@color/content_text"
+        android:layout_margin="@dimen/fragment_product_confirmation_margin"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_count"
+        android:text="2"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="@dimen/fragment_order_management_text"
+        android:textColor="@color/content_text"
+        android:layout_margin="@dimen/fragment_product_confirmation_margin"/>
+
+</LinearLayout>

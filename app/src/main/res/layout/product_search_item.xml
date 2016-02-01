@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/detail2_subitem_left"
+android:background="@drawable/product_item_border"
+android:padding="10dp"
+android:clipToPadding="false"
+android:layout_weight="0.45"
+android:layout_marginStart="10dp">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:id="@+id/product_image"
+    android:src="@drawable/no_product_image"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView10"
+    android:src="@drawable/homepage_split2"
+    android:layout_below="@+id/product_image"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="-10dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"
+    android:id="@+id/product_tittle"
+    android:textColor="#252525"
+    android:textSize="12dp"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:layout_below="@+id/product_image"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:textStyle="bold" />
+
+
+<ImageView
+    android:id="@+id/product_super_sale"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="0dp"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/product_super_sale" />
+
+<ImageView
+    android:id="@+id/product_sale"
+    android:layout_width="70dp"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="0dp"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/product_sale" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="18% off"
+    android:id="@+id/product_sale_percentage"
+    android:textStyle="bold"
+    android:textSize="12dp"
+    android:layout_below="@+id/product_tittle"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="5dp"
+    android:textColor="#ccc" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="$1,200.00"
+    android:id="@+id/product_price_special"
+    android:textStyle="bold"
+    android:textSize="12dp"
+    android:textColor="#ed3a23"
+    android:layout_alignBaseline="@+id/product_sale_percentage"
+    android:layout_alignBottom="@+id/product_sale_percentage"
+    android:layout_alignEnd="@+id/imageView10" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="$1000.00"
+    android:id="@+id/product_price"
+    android:textStyle="bold"
+    android:textSize="12dp"
+    android:textColor="#ccc"
+    android:layout_below="@id/product_price_special"
+    android:layout_alignEnd="@+id/product_price_special"/>
+
+</RelativeLayout>

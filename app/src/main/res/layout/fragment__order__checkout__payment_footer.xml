@@ -1,0 +1,299 @@
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="#ffffff">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f3f4"
+        android:id="@+id/order_payment_bottom_layout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/order_ship_main_bottom_layout">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/order_history_bottom_banner_layout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/select_shipping_method_imageview"
+                    android:src="@drawable/order_payment_iconsub" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/order_ship_arrow"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/select_payment_method_imageview"
+                    android:src="@drawable/order_payment_iconmain"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/order_ship_split2"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_history_bottom_banner_layout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/order_shipping_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_shipping"
+                    android:id="@+id/textView10"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/shipping_methods"
+                    android:layout_below="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </RadioGroup>
+
+                <!--<ImageView-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/payment_method_1"-->
+                    <!--android:src="@drawable/order_payment_method2"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/textView10"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/payment_method_2"-->
+                    <!--android:src="@drawable/order_payment_method2"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_below="@+id/textView10"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/paypal_payment"-->
+                    <!--android:src="@drawable/order_payment_method1"-->
+                    <!--android:layout_below="@+id/payment_method_1"-->
+                    <!--android:layout_marginTop="25dp"/>-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_shipping_layout"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/order_payment_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_payment"
+                    android:id="@+id/textView11"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <RadioGroup
+                    android:id="@+id/payments_methods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView11">
+
+
+                </RadioGroup>
+
+                <!--<ImageView-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/payment_method_1"-->
+                <!--android:src="@drawable/order_payment_method2"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/textView10"/>-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/payment_method_2"-->
+                <!--android:src="@drawable/order_payment_method2"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_below="@+id/textView10"/>-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/paypal_payment"-->
+                <!--android:src="@drawable/order_payment_method1"-->
+                <!--android:layout_below="@+id/payment_method_1"-->
+                <!--android:layout_marginTop="25dp"/>-->
+
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/order_payment_layout"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:id="@+id/order_ship_name_layout">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Name on card"-->
+                    <!--android:id="@+id/textView6"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/customer_card_name"-->
+                    <!--android:background="@drawable/edittext_background_style"-->
+                    <!--android:layout_below="@+id/textView6" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/order_ship_name_layout"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:id="@+id/order_ship_phone_layout" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Card number"-->
+                    <!--android:id="@+id/textView8"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/editText2"-->
+                    <!--android:background="@drawable/edittext_background_style"-->
+                    <!--android:layout_below="@+id/textView8" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_below="@id/order_ship_phone_layout"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:id="@+id/order_ship_address_layout" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Expiration Date"-->
+                    <!--android:id="@+id/textView9"-->
+                    <!--android:layout_marginStart="10dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<Spinner-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/order_payment_month"-->
+                    <!--android:spinnerMode="dropdown"-->
+                    <!--android:layout_below="@+id/textView9"/>-->
+
+                <!--<Spinner-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/order_payment_date"-->
+                    <!--android:spinnerMode="dropdown"-->
+                    <!--android:layout_below="@+id/textView9"-->
+                    <!--android:layout_toRightOf="@+id/order_payment_month"/>-->
+
+                <!--<Spinner-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:id="@+id/order_payment_year"-->
+                    <!--android:spinnerMode="dropdown"-->
+                    <!--android:layout_below="@+id/textView9"-->
+                    <!--android:layout_toRightOf="@+id/order_payment_date"/>-->
+            <!--</RelativeLayout>-->
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/edittext_background_style"
+            android:layout_below="@id/order_ship_main_bottom_layout"
+            android:layout_marginStart="-1dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="-1dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#ed3a24"
+                android:id="@+id/order_payment_submit"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:id="@+id/order_history_subbanner"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="24dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+    <!--</ScrollView>-->

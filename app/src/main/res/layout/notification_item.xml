@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_layout_item"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/category_list_boder">
+
+
+    <RelativeLayout
+        android:id="@+id/item_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b1e1fa"
+        >
+
+
+        <TextView
+            android:id="@+id/item_tittle"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+
+            android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "
+            android:textColor="#000"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:textStyle="bold|normal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/small_circle" />
+
+        <TextView
+            android:id="@+id/item_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_tittle"
+
+            android:layout_marginStart="5dp"
+            android:text="2.4 GHz Dual-Core Intel Core i5 Processor, 4GB 1333MHz DDR3 SDRAM, 500 GB Hard Drive, 8x DVD/CD SuperDrive, 13.3-Inch LED-backlit Display, 1280-by-800 Resolution, Intel HD Graphics 3000
+    Mac OS X v10.7 Lion, 7 Hour Battery Life"
+            android:textColor="#959595"
+            android:textIsSelectable="false"
+            android:textSize="9dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

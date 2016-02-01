@@ -1,0 +1,362 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_profile_layout_banner"
+        android:layout_marginBottom="10dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/forgot_bannerbackground" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/forgot_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_back"
+            android:src="@drawable/forgot_menu"
+            android:layout_margin="20dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView4"
+            android:background="#ed3a24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:id="@+id/update_profile_subbaner_text"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/update_profile_layout_banner"
+        android:id="@+id/registration_layout_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_conner"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:id="@+id/customer_firstname"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/customer_lastname"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customer_firstname"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/customer_email"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customer_lastname"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/customer_password"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customer_email"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:fontFamily=""
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/hint_foreground_material_light"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+            <Spinner
+                android:id="@+id/customer_country"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/customer_country"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/registration_check" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Spinner
+                android:id="@+id/customer_city"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="City"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hint_foreground_material_light"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/customer_city"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/registration_check" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="1.03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/customer_country_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/customer_city"
+                android:inputType="number"
+                android:layout_weight="3"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Country code"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hint_foreground_material_light"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/customer_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/customer_country_code"
+                android:layout_marginStart="10dp"
+                android:layout_weight="2"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="Mobile"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="@color/hint_foreground_material_light"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.98"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"
+                android:layout_weight="0.5"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:ems="10"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/hint_foreground_material_light"
+                android:textSize="12dp" />
+         </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/register_error"
+
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/customer_mobile"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.05"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:text=""
+            android:textColor="@color/error_text"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/registration_layout_fields"
+        android:background="#ed3a24"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:id="@+id/update_profile_update_profile">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/updateprofile_gear"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/update_profile_update"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_profile"
+            android:id="@+id/update_profile_update"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/registration_layout_fields"
+        android:background="#ed3a24"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/update_profile_change_password">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/updateprofile_gear"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/update_profile_change_password_text"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:id="@+id/update_profile_change_password_text"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/update_profile_change_password"
+        android:background="#d8d8d8"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/update_profile_logout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_logout"
+            android:id="@+id/update_profile_logout_text"
+            android:layout_centerInParent="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</LinearLayout>

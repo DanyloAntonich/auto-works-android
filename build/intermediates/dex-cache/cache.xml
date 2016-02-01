@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.4\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2a24cba08e1d865a79e61335f5a1bd64d520106d">
+        <dex dex="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\pre-dexed\debug\classes-12899337fb7e3b2e4be2efc2582dcfb1bc0d6332.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.googlecode.libphonenumber\libphonenumber\7.2.4\52fb0d29d401cc3db8202aff3aa73ffc69f59ba8\libphonenumber-7.2.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="52fb0d29d401cc3db8202aff3aa73ffc69f59ba8">
+        <dex dex="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\pre-dexed\debug\libphonenumber-7.2.4-24a95c8e80da96317876a0d87bc3b9a6f2383ac7.jar" />
+    </item>
+    <item
+        jar="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\exploded-aar\com.android.support\percent\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1badcc3d0af60cfcab190ea7b78d060e824cfb1e">
+        <dex dex="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\pre-dexed\debug\classes-ba794b2529ed1fb5a07cdf291e3569c35fdd4b62.jar" />
+    </item>
+    <item
+        jar="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\exploded-aar\com.afollestad\core\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0775a0ee0c9a2f0cda8dadac3fb92cdd09c26a71">
+        <dex dex="F:\Android_work(2016.1-)\auto-works-android\app\build\intermediates\pre-dexed\debug\classes-1633484fa66be4b6dc50cbeff11f81a91708cd37.jar" />
+    </item>
+
+</items>

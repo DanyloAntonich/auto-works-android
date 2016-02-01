@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="none"
+        android:background="@color/navigation"
+
+        >
+        <item
+            android:id="@+id/menu_home"
+            android:title="@string/menu_home"
+            android:icon="@drawable/home"
+            />
+        <!--android:checked="true"-->
+
+        <item
+            android:id="@+id/menu_catetories"
+            android:title="@string/menu_notifications"
+            android:icon="@drawable/categories"/>
+        <item
+            android:id="@+id/menu_notification"
+            android:title="@string/menu_notifications"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/menu_special_offer"
+            android:title="@string/menu_scpecial_offer"
+            android:icon="@drawable/featured_products"/>
+        <item
+            android:id="@+id/menu_shop_cart"
+            android:title="@string/menu_shopping_cart"
+            android:icon="@drawable/shopping_cart"/>
+        <item
+            android:id="@+id/menu_wish_list"
+            android:title="@string/menu_wish_list"
+            android:icon="@drawable/wish_list"
+            />
+        <item
+            android:id="@+id/menu_profile"
+            android:title="@string/menu_profile"
+            android:icon="@drawable/update_profile"/>
+
+        <item
+            android:id="@+id/menu_order_history"
+            android:title="@string/menu_order_history"
+            android:icon="@drawable/order_history"/>
+        <item
+            android:id="@+id/menu_map"
+            android:title="@string/menu_map"
+            android:icon="@drawable/map"/>
+
+        <item
+            android:id="@+id/menu_contact_us"
+            android:title="@string/menu_contact_us"
+            android:icon="@drawable/contact_us"/>
+
+        <item
+            android:id="@+id/menu_login"
+            android:title="@string/menu_login"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/menu_register"
+            android:title="@string/menu_registration"
+            android:icon="@drawable/home"/>
+
+
+    </group>
+</menu>

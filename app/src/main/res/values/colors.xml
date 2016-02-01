@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- error background color -->
+    <color name="error_background_color">#FF7575</color>
+    <!-- disabled color -->
+    <color name="disabled_color">#CCCCCC</color>
+    <!-- main color -->
+    <color name="main_color">#ed3a24</color>
+    <color name="normal_text_color">#414141</color>
+    <!-- navigation -->
+    <color name="navigation">#eeeeee</color>
+    <color name="navigation_selected">#ed3a24</color>
+    <color name="navigation_divider">#ffd9d9d9</color>
+    <color name="navigation_text">#414141</color>
+    <color name="navigation_text_hover">#ffffffff</color>
+    <!-- action bar -->
+    <color name="action_bar">#ffffffff</color>
+    <color name="action_bar_text">#000000</color>
+    <!-- tabhost -->
+    <color name="tabhost_background">#ffffffff</color>
+    <color name="tabhost_divider">#ffff002a</color>
+    <color name="tabhost_text">#ed3a24</color>
+    <!-- fragment_home -->
+    <color name="home_background">#ffffff</color>
+    <color name="home_product_background">#ffffff</color>
+    <color name="home_member_background">#ffffff</color>
+    <color name="home_collection_background">#ffffff</color>
+    <!-- fragment_home_product_productdetail -->
+    <color name="home_product_productdetail_background">#ffffffff</color>
+    <!-- fragment_login -->
+    <color name="login_background">#ffececec</color>
+    <color name="login_textbox_background">#ffffff</color>
+    <color name="login_text">#414141</color>
+    <!-- Spinner Text Color -->
+    <color name="spinner_text_color">#414141</color>
+    <!-- fragment_profile -->
+    <color name="profile_background">#ffffff</color>
+    <color name="profile_textcolor">#414141</color>
+    <!-- fragment_product -->
+    <color name="product_background">#ffffff</color>
+
+    <color name="product_textcolor">#414141</color>
+
+    <!-- fragment_text -->
+    <color name="heading_text">#ed3a24</color>
+    <color name="content_text">#000000</color>
+
+    <!-- fragment_button -->
+    <color name="button">#ed3a24</color>
+
+    <!-- fragment_background -->
+    <color name="fragment_light_grey_background">#eeeeee</color>
+
+    <!-- fragment_order -->
+    <color name="fragment_order_background">#eeeeee</color>
+
+    <!-- fragment_myproduct -->
+    <color name="fragment_myproduct_addbutton">#dfdfdf</color>
+
+    <color name="cursor_editText">#000000</color>
+
+    <color name="error_text">#ffff002a</color>
+
+    <color name="transparent">#00ffffff</color>
+    <!-- font color -->
+    <color name="font_blue_color">#26437d</color>
+    <color name="fb_font_color">#34267d</color>
+    <color name="main_background">#e2e2e2</color>
+
+    /////////////////////////
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="main_color_green">#00B863</color>
+    <color name="main_color_gray_dk">#3B3B3B</color>
+    <color name="main_color_gray_it">#ACACAC</color>
+    <color name="main_color_gray">#7D7D7D</color>
+    <color name="gray_light">#E8E8E8</color>
+
+    <color name="dark">#5c5b5c</color>
+    <color name="blue">#26aefc</color>
+    <color name="green">#0dc607</color>
+    <color name="red">#c12304</color>
+    <color name="strong_blue">#104df5</color>
+    <color name="num">#f55910</color>
+    <color name="grey">#9c9b9b</color>
+
+</resources>

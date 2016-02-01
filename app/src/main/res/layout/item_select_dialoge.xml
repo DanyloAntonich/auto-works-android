@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/technical_support"
+                android:id="@+id/rd_technical" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/billing_support"
+                android:id="@+id/rd_billing" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/radio_group"
+            android:text="@string/choose_label"
+            android:textColor="@color/blue"
+            android:background="@color/transparent"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_choose"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/radio_group"
+            android:text="@string/cancel_label"
+            android:textColor="@color/blue"
+            android:background="@color/transparent"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

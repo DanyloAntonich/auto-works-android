@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_categories">
+        <item>Software</item>
+        <item>Laptops</item>
+        <item>Desktops</item>
+        <item>Phones &amp; PDAs</item>
+        <item>Components</item>
+        <item>PC</item>
+        <item>Mac</item>
+        <item>Monitors</item>
+        <item>Mice and Trackballs</item>
+        <item>Printers</item>
+        <item>Scanners</item>
+        <item>Web Cameras</item>
+        <item>Phụ kiện</item>
+        <item>MP3 Players</item>
+    </string-array>
+</resources>

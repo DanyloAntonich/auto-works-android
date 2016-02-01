@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_detail_item_image"
+        android:src="@drawable/no_product_image"
+        android:minWidth="140dp"
+        android:maxWidth="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "
+        android:id="@+id/order_detail_item_tittle"
+        android:layout_alignTop="@+id/order_detail_item_image"
+        android:layout_toRightOf="@+id/order_detail_item_image"
+        android:textColor="#000"
+        android:textStyle="bold|normal|italic"
+        android:textSize="10dp"
+        android:textIsSelectable="false"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$900.00"
+        android:id="@+id/order_detail_item_newprice"
+        android:textColor="#ff3f3f"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="47dp"
+        android:layout_below="@+id/order_detail_item_image"
+        android:layout_alignEnd="@+id/order_detail_item_image" />
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/order_detail_item_tittle"
+        android:layout_below="@+id/order_detail_item_tittle"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/relativeLayout1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:id="@+id/textView_quantity1"
+            android:textSize="12dp"
+            android:textColor="#959595"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/order_detail_item_quantity"
+            android:textSize="12dp"
+            android:textColor="#050505"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:id="@+id/textView_amount1"
+            android:layout_below="@id/textView_quantity1"
+            android:textSize="12dp"
+            android:textColor="#959595"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 1,000.00"
+            android:id="@+id/order_detail_item_single_price"
+            android:textSize="12dp"
+            android:textColor="#ed3a24"
+            android:layout_below="@+id/order_detail_item_quantity"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:id="@+id/textView_total1"
+            android:layout_below="@id/textView_amount1"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 1,000.00"
+            android:id="@+id/order_detail_item_total"
+            android:textSize="12dp"
+            android:textColor="#ed3a24"
+            android:layout_below="@+id/order_detail_item_single_price"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:textIsSelectable="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1,099.00"
+        android:id="@+id/order_detail_item_price"
+        android:textColor="#959595"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:enabled="false"
+
+        android:autoText="false"
+        android:layout_below="@+id/order_detail_item_newprice"
+        android:layout_alignEnd="@+id/order_detail_item_newprice"
+        android:layout_marginEnd="23dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30% off"
+        android:id="@+id/order_detail_item_sale_pecentage"
+        android:textColor="#0072bc"
+        android:textSize="12dp"
+        android:enabled="false"
+
+        android:autoText="false"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/order_detail_item_price"
+        android:layout_alignEnd="@+id/order_detail_item_image"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

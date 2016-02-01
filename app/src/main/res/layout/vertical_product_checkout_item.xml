@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/order_ship_layout_tittle"
+        android:id="@+id/item1_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Apple MacBook Pro MGXA2LL/A 15.4-Inch Laptop with Retina Display (NEWEST VERSION)  "
+            android:id="@+id/item1_tittle"
+            android:textSize="8dp"
+            android:textIsSelectable="true"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="#000"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="10dp"
+            android:text="$1200.00"
+            android:id="@+id/item1_price"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:textColor="#ff3f3f"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item1_tittle"
+            android:layout_toEndOf="@+id/item1_tittle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almost Gone!!!"
+            android:id="@+id/item1_alert"
+            android:layout_above="@+id/item1_price"
+            android:layout_toRightOf="@+id/item1_tittle"
+            android:textColor="#0075b1"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:text="2"
+            android:id="@+id/item1_quantity"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item1_price"
+            android:layout_toEndOf="@+id/item1_price"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="10dp"
+            android:text="$1200.00"
+            android:id="@+id/item1_amount"
+            android:textSize="8dp"
+            android:textStyle="bold"
+            android:textColor="#fe0101"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item1_quantity"
+            android:layout_toEndOf="@+id/item1_quantity"
+            android:layout_marginStart="30dp"
+            android:password="false" />
+
+        <!--<TextView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:text="$30"-->
+            <!--android:id="@+id/item1_ship"-->
+            <!--android:textSize="8dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#0072bc"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:password="false"-->
+            <!--android:layout_marginStart="14dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/item1_amount"-->
+            <!--android:layout_toEndOf="@+id/item1_amount" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/item1_delete"-->
+            <!--android:src="@drawable/cart_delete"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentEnd="false"-->
+            <!--android:layout_marginEnd="10dp" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/order_ship_split"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

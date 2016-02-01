@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_layout_item1"
+        android:layout_below="@+id/cart_layout_banner"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/cart_item1_image"
+            android:src="@drawable/no_product_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/item1_tittle"
+            android:layout_alignTop="@+id/cart_item1_image"
+            android:layout_toRightOf="@+id/cart_item1_image"
+            android:textColor="#000"
+            android:textStyle="bold|normal"
+            android:textSize="8dp"
+            android:textIsSelectable="false"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:id="@+id/item1_oldprice"
+            android:textColor="#959595"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_below="@+id/item1_tittle"
+            android:layout_alignLeft="@+id/item1_tittle"
+            android:layout_alignStart="@+id/item1_tittle"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:autoText="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:id="@+id/item1_price"
+            android:textColor="#ff3f3f"
+            android:textSize="12dp"
+            android:layout_below="@+id/item1_tittle"
+            android:layout_toRightOf="@+id/item1_oldprice"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almost Gone!!!"
+            android:id="@+id/item1_alert"
+            android:layout_below="@+id/item1_price"
+            android:layout_toRightOf="@+id/cart_item1_image"
+            android:textColor="#0075b1"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+        TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0% off"
+            android:id="@+id/item1_off_percent"
+            android:textColor="#959595"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_below="@+id/item1_price"
+
+            android:layout_alignStart="@+id/item1_price"
+            android:layout_marginTop="5dp"
+            android:enabled="false"
+            android:autoText="false" />
+
+
+        <RelativeLayout
+            android:id="@+id/buy_now"
+            android:layout_below="@+id/item1_alert"
+            android:layout_alignStart="@+id/item1_oldprice"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:background="#ed3a24"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/registration_register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Buy now"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/item1_tittle"
+            android:layout_marginTop="-5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_corner_text"
+            android:id="@+id/quantityRelativeLayout"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="6dp">
+
+
+            extView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:id="@+id/textView3"
+                android:textSize="12dp"
+                android:textColor="#959595"
+                />
+
+            EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"
+                android:text="2"
+                android:singleLine="true"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:id="@+id/item1_quantity"
+                android:textSize="12dp"
+                android:textColor="#050505"
+                android:layout_toRightOf="@id/textView3"
+                android:layout_marginStart="2dp" />
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Free shipping"-->
+            <!--android:id="@+id/item1_shipping"-->
+            <!--android:layout_below="@+id/item1_oldprice"-->
+            <!--android:layout_alignLeft="@+id/item1_oldprice"-->
+            <!--android:layout_alignStart="@+id/item1_oldprice"-->
+            <!--android:textColor="#0072bc"-->
+            <!--android:textSize="10dp"-->
+            <!--android:layout_marginTop="5dp" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Price:"-->
+            <!--android:id="@+id/item1_amount_label"-->
+            <!--android:layout_below="@+id/item1_oldprice"-->
+            <!--android:layout_alignLeft="@+id/item1_oldprice"-->
+            <!--android:textColor="#959595"-->
+            <!--android:textSize="12dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="$1800.99"-->
+            <!--android:id="@+id/item1_amount"-->
+            <!--android:layout_below="@+id/item1_oldprice"-->
+            <!--android:layout_toRightOf="@+id/item1_amount_label"-->
+            <!--android:textColor="#fe0101"-->
+            <!--android:textSize="12dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginStart="10dp" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item1_info"
+            android:src="@drawable/cart_info"
+            android:layout_below="@+id/item1_alert"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@+id/buy_now"
+
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item1_delete"
+            android:src="@drawable/cart_delete"
+            android:layout_below="@+id/item1_alert"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/item1_info"
+
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

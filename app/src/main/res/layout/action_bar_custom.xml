@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/customActionbar"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/actionBarLogo"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:layout_marginStart="-20dp"
+        android:src="@drawable/logo_autoworks" />
+
+
+</RelativeLayout>

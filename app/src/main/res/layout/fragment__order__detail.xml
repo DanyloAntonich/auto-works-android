@@ -1,0 +1,709 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_detail_layout_banner"
+        android:layout_marginBottom="0dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/forgot_bannerbackground" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/forgot_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_back"
+            android:src="@drawable/forgot_menu"
+            android:layout_margin="20dp" /> -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView4"
+            android:background="#ed3a24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Detail"
+                android:id="@+id/order_detail_subbanner"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/order_detail_layout_banner"
+        android:background="#f9bcc3"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/order_detail_layout_summary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:id="@+id/textViewDate"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="January 5, 2014"
+            android:id="@+id/order_detail_date"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewDate"
+            android:layout_toEndOf="@+id/textViewDate"
+            android:textStyle="bold"
+            android:textColor="#ed3a24"
+            android:textSize="14dp"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:id="@+id/textViewTotal"
+            android:layout_marginStart="15dp"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/order_detail_total"
+            android:layout_toRightOf="@+id/order_detail_date"
+            android:layout_toEndOf="@+id/order_detail_date"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$6,300.00"
+            android:id="@+id/order_detail_total"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textViewTotal"
+            android:layout_toEndOf="@+id/textViewTotal"
+            android:textColor="#fe0101"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items:"
+            android:id="@+id/textView5"
+            android:textSize="14dp"
+            android:textIsSelectable="true"
+            android:textColor="#000"
+            android:layout_alignTop="@+id/order_detail_total"
+            android:layout_toRightOf="@+id/order_detail_total"
+            android:layout_toEndOf="@+id/order_detail_total"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/order_detail_quantity"
+            android:textColor="#fe0101"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_marginStart="5dp" />
+    </RelativeLayout>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/order_detail_item_list">
+        
+    </ListView>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:layout_below="@+id/order_detail_layout_summary">-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!-->-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:id="@+id/order_detail_layout_item1"-->
+            <!-->-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/cart_item1_image"-->
+                <!--android:src="@drawable/cart_item1"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginTop="10dp"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "-->
+                <!--android:id="@+id/item1_tittle"-->
+                <!--android:layout_alignTop="@+id/cart_item1_image"-->
+                <!--android:layout_toRightOf="@+id/cart_item1_image"-->
+                <!--android:textColor="#000"-->
+                <!--android:textStyle="bold|normal|italic"-->
+                <!--android:textSize="10dp"-->
+                <!--android:textIsSelectable="false"-->
+                <!--android:layout_marginStart="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="$900.00"-->
+                <!--android:id="@+id/item1_newprice"-->
+                <!--android:textColor="#ff3f3f"-->
+                <!--android:textSize="12dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_below="@+id/cart_item1_image"-->
+                <!--android:layout_alignEnd="@+id/cart_item1_image"-->
+                <!--android:layout_alignEnd="@+id/cart_item1_image" />-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignEnd="@+id/item1_tittle"-->
+                <!--android:layout_below="@+id/item1_tittle"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:id="@+id/relativeLayout1"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="6dp">-->
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Quantity:"-->
+                    <!--android:id="@+id/textView_quality1"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="2"-->
+                    <!--android:id="@+id/item1_quality"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Amount:"-->
+                    <!--android:id="@+id/textView_amount1"-->
+                    <!--android:layout_below="@id/textView_quality1"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item1_amount"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item1_quality"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shipping:"-->
+                    <!--android:id="@+id/textView_shipping1"-->
+                    <!--android:layout_below="@id/textView_amount1"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$10"-->
+                    <!--android:id="@+id/item1_ship"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_below="@+id/item1_amount"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Total:"-->
+                    <!--android:id="@+id/textView_total1"-->
+                    <!--android:layout_below="@id/textView_shipping1"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textStyle="bold" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item1_total"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item1_ship"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="$1,099.00"-->
+                <!--android:id="@+id/textView"-->
+                <!--android:textColor="#959595"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="12dp"-->
+                <!--android:enabled="false"-->
+
+                <!--android:autoText="false"-->
+                <!--android:layout_below="@+id/item1_newprice"-->
+                <!--android:layout_alignEnd="@+id/item1_newprice"-->
+                <!--android:layout_alignEnd="@+id/item1_newprice"-->
+                <!--android:layout_marginEnd="23dp"-->
+                <!--android:layout_marginEnd="23dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="30% off"-->
+                <!--android:id="@+id/item1_discount"-->
+                <!--android:textColor="#0072bc"-->
+                <!--android:textSize="12dp"-->
+                <!--android:enabled="false"-->
+
+                <!--android:autoText="false"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:layout_alignTop="@+id/textView"-->
+                <!--android:layout_alignEnd="@+id/cart_item1_image"-->
+                <!--android:layout_alignEnd="@+id/cart_item1_image"-->
+                <!--android:textStyle="normal" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:id="@+id/order_detail_layout_item2"-->
+            <!--android:layout_below="@+id/order_detail_layout_item1">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:src="@drawable/order_detail_split" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/item2_image"-->
+                <!--android:src="@drawable/cart_item1"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginTop="15dp"/>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignEnd="@+id/textView3"-->
+                <!--android:layout_below="@+id/textView3"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:id="@+id/relativeLayout"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="6dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Quantity:"-->
+                    <!--android:id="@+id/textView6"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="2"-->
+                    <!--android:id="@+id/item2_quantity"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Amount:"-->
+                    <!--android:id="@+id/textView8"-->
+                    <!--android:layout_below="@+id/textView6"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item2_amount"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item2_quantity"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shipping:"-->
+                    <!--android:id="@+id/textView10"-->
+                    <!--android:layout_below="@+id/textView8"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$10"-->
+                    <!--android:id="@+id/item2_ship"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_below="@+id/item2_amount"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Total:"-->
+                    <!--android:id="@+id/textView12"-->
+                    <!--android:layout_below="@+id/textView10"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item2_total"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item2_ship"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "-->
+                <!--android:id="@+id/textView3"-->
+                <!--android:layout_alignTop="@+id/item2_image"-->
+                <!--android:layout_toRightOf="@+id/item2_image"-->
+                <!--android:textColor="#000"-->
+                <!--android:textStyle="bold|normal|italic"-->
+                <!--android:textSize="10dp"-->
+                <!--android:textIsSelectable="false"-->
+                <!--android:layout_marginStart="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="$900.00"-->
+                <!--android:id="@+id/item2_newprice"-->
+                <!--android:textColor="#ff3f3f"-->
+                <!--android:textSize="12dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_below="@+id/item2_image"-->
+                <!--android:layout_alignEnd="@+id/item2_image"-->
+                <!--android:layout_alignEnd="@+id/item2_image" />-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="$1,099.00"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/textView14"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#959595"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:enabled="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;&ndash;&gt;-->
+            <!--&lt;!&ndash;android:autoText="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/textView4"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignEnd="@+id/textView4"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignEnd="@+id/textView4"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="23dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="23dp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="30% off"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/textView15"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#0072bc"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="12dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:enabled="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;&ndash;&gt;-->
+            <!--&lt;!&ndash;android:autoText="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignTop="@+id/textView14"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignEnd="@+id/imageView2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignEnd="@+id/imageView2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="normal" />&ndash;&gt;-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:id="@+id/relativeLayout3"-->
+            <!--android:layout_below="@+id/order_detail_layout_item2">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView6"-->
+                <!--android:src="@drawable/order_detail_split" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView7"-->
+                <!--android:src="@drawable/cart_item1"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:layout_marginTop="15dp" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignEnd="@+id/textView24"-->
+                <!--android:layout_below="@+id/textView24"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:id="@+id/relativeLayout2"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:paddingBottom="6dp" >-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Quantity:"-->
+                    <!--android:id="@+id/textView16"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="2"-->
+                    <!--android:id="@+id/item3_quantity"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Amount:"-->
+                    <!--android:id="@+id/textView18"-->
+                    <!--android:layout_below="@+id/textView16"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item3_amount"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item3_quantity"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shipping:"-->
+                    <!--android:id="@+id/textView20"-->
+                    <!--android:layout_below="@+id/textView18"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#959595"-->
+                    <!--android:layout_marginBottom="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$10"-->
+                    <!--android:id="@+id/item3_ship"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#050505"-->
+                    <!--android:layout_below="@+id/item3_amount"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Total:"-->
+                    <!--android:id="@+id/textView22"-->
+                    <!--android:layout_below="@+id/textView20"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="$ 1,000.00"-->
+                    <!--android:id="@+id/item3_total"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ed3a24"-->
+                    <!--android:layout_below="@+id/item3_ship"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:textIsSelectable="true"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="180dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "-->
+                <!--android:id="@+id/textView24"-->
+                <!--android:layout_alignTop="@+id/imageView7"-->
+                <!--android:layout_toRightOf="@+id/imageView7"-->
+                <!--android:textColor="#000"-->
+                <!--android:textStyle="bold|normal|italic"-->
+                <!--android:textSize="10dp"-->
+                <!--android:textIsSelectable="false"-->
+                <!--android:layout_marginStart="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="$900.00"-->
+                <!--android:id="@+id/item3_newprice"-->
+                <!--android:textColor="#ff3f3f"-->
+                <!--android:textSize="12dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_marginEnd="47dp"-->
+                <!--android:layout_below="@+id/imageView7"-->
+                <!--android:layout_alignEnd="@+id/imageView7"-->
+                <!--android:layout_alignEnd="@+id/imageView7" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="$1,099.00"-->
+                <!--android:id="@+id/item3_oldprice"-->
+                <!--android:textColor="#959595"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="12dp"-->
+                <!--android:enabled="false"-->
+
+                <!--android:autoText="false"-->
+                <!--android:layout_below="@+id/item3_newprice"-->
+                <!--android:layout_alignEnd="@+id/item3_newprice"-->
+                <!--android:layout_alignEnd="@+id/item3_newprice"-->
+                <!--android:layout_marginEnd="23dp"-->
+                <!--android:layout_marginEnd="23dp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="30% off"-->
+                <!--android:id="@+id/item3_discount"-->
+                <!--android:textColor="#0072bc"-->
+                <!--android:textSize="12dp"-->
+                <!--android:enabled="false"-->
+
+                <!--android:autoText="false"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:layout_marginEnd="20dp"-->
+                <!--android:layout_alignTop="@+id/item3_oldprice"-->
+                <!--android:layout_alignEnd="@+id/imageView7"-->
+                <!--android:layout_alignEnd="@+id/imageView7"-->
+                <!--android:textStyle="normal" />-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+
+</RelativeLayout>

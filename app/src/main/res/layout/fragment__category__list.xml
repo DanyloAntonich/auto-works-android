@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <RelativeLayout
+        style="@style/GenericProgressBackground"
+        android:id="@+id/categoryListLoadingPanel"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            style="@style/GenericProgressIndicator"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_layout_banner"
+        android:layout_marginBottom="5dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/imageView4"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/forgot_bannerbackground" />-->
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cart_back"-->
+            <!--android:src="@drawable/forgot_menu"-->
+            <!--android:layout_margin="20dp" />-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cart_menu"-->
+            <!--android:src="@drawable/cart_menu"-->
+            <!--android:layout_marginStart="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_marginBottom="20dp"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/cart_rightmenu"-->
+            <!--android:src="@drawable/cart_sidemenu"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginTop="16dp" />-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView4"
+            android:background="#ed3a24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_categories"
+                android:id="@+id/cart_subbanner_text"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/category_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

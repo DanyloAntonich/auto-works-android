@@ -1,0 +1,687 @@
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent">-->
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:id="@+id/search_box_container"
+                android:layout_gravity="right"
+                android:layout_weight="0.95"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <EditText android:id="@+id/inputSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000"
+                    android:inputType="textVisiblePassword"
+                    android:background="@drawable/search_box"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/searching_filter_layout"
+            android:layout_marginBottom="5dp"
+            android:weightSum="4">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="25%"
+                    android:id="@+id/searching_filter_tittle_layout"
+                    android:background="#ed3a24"
+                    android:layout_marginEnd="2dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter"
+                        android:id="@+id/textView14"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="42%"
+                    android:layout_toRightOf="@+id/searching_filter_tittle_layout"
+                    android:id="@+id/searching_filter_category"
+                    android:background="#ed3a24"
+                    android:layout_marginEnd="2dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView15"
+                        android:src="@drawable/searching_folder"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:id="@+id/textView15"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView15"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="100%"
+                    app:layout_widthPercent="33%"
+                    android:layout_toRightOf="@+id/searching_filter_category"
+                    android:id="@+id/searching_filter_sort"
+                    android:background="#ed3a24"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView18"
+                        android:src="@drawable/searching_sort"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort by"
+                        android:id="@+id/textView19"
+                        android:layout_toRightOf="@+id/imageView18"
+                        android:textSize="15dp"
+                        android:textColor="#fff"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/product_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:gravity="center">
+
+        </GridView>
+
+    </FrameLayout>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_below="@+id/searching_layout_banner"-->
+            <!--android:layout_weight="6">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!-->-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:id="@+id/homepage_item12_layout"-->
+                    <!--android:layout_below="@+id/searching_filter_layout">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/detail2_subitem_left"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginStart="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item1_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView10"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item1_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item1_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item1_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="false"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item1_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item1_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item1_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item1_off"-->
+                            <!--android:layout_alignBottom="@+id/item1_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView10"-->
+                            <!--android:layout_alignEnd="@+id/imageView10" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item1_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@id/item1_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item1_newprice"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/detail2_subitem_right"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginEnd="10dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item2_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView12"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item2_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item2_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item2_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item2_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item2_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item2_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item2_off"-->
+                            <!--android:layout_alignBottom="@+id/item2_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView12"-->
+                            <!--android:layout_alignEnd="@+id/imageView12" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item2_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@+id/item2_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item2_newprice" />-->
+                    <!--</RelativeLayout>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:id="@+id/homepage_item34_layout"-->
+                    <!--android:layout_below="@+id/homepage_item12_layout" >-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/relativeLayout4"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginStart="10dp" >-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item3_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView23"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item3_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item3_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item3_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="false"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item3_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item3_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item3_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item3_off"-->
+                            <!--android:layout_alignBottom="@+id/item3_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView23"-->
+                            <!--android:layout_alignEnd="@+id/imageView23" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item3_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@+id/item3_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item3_newprice" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/relativeLayout5"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginEnd="10dp" >-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item4_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView25"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item4_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item4_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item4_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item4_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item4_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item4_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item4_off"-->
+                            <!--android:layout_alignBottom="@+id/item4_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView25"-->
+                            <!--android:layout_alignEnd="@+id/imageView25" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item4_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@+id/item4_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item4_newprice" />-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:id="@+id/homepage_item56_layout"-->
+                    <!--android:layout_below="@+id/homepage_item34_layout" >-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/relativeLayout6"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginStart="10dp" >-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item5_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView27"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item5_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item5_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item5_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="false"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item5_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item5_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item5_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item5_off"-->
+                            <!--android:layout_alignBottom="@+id/item5_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView27"-->
+                            <!--android:layout_alignEnd="@+id/imageView27" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item5_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@+id/item5_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item5_newprice" />-->
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="165dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/relativeLayout7"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:background="@drawable/homepage_rounded_layout"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:clipToPadding="false"-->
+                        <!--android:layout_marginEnd="10dp" >-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="130dp"-->
+                            <!--android:id="@+id/item6_image"-->
+                            <!--android:src="@drawable/homepage_item1"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_centerHorizontal="true" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/imageView29"-->
+                            <!--android:src="@drawable/homepage_split2"-->
+                            <!--android:layout_below="@+id/item6_image"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="-10dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Adidas Liquid Ride Red Zest/Urban Sky Womens Running Shoes"-->
+                            <!--android:id="@+id/item6_tittle"-->
+                            <!--android:textColor="#252525"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textAlignment="center"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_below="@+id/item6_image"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:layout_marginEnd="5dp"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:textStyle="bold" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="18% off"-->
+                            <!--android:id="@+id/item6_off"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:layout_below="@+id/item6_tittle"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_marginStart="5dp"-->
+                            <!--android:textColor="#ccc" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1,200.00"-->
+                            <!--android:id="@+id/item6_newprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ed3a23"-->
+                            <!--android:layout_alignBaseline="@+id/item6_off"-->
+                            <!--android:layout_alignBottom="@+id/item6_off"-->
+                            <!--android:layout_alignEnd="@+id/imageView29"-->
+                            <!--android:layout_alignEnd="@+id/imageView29" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="$1000.00"-->
+                            <!--android:id="@+id/item6_oldprice"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textSize="12dp"-->
+                            <!--android:textColor="#ccc"-->
+                            <!--android:layout_below="@+id/item6_newprice"-->
+                            <!--android:layout_alignEnd="@+id/item6_newprice" />-->
+                    <!--</RelativeLayout>-->
+                <!--</RelativeLayout>-->
+
+            <!--</RelativeLayout>-->
+        <!--</ScrollView>-->
+    </LinearLayout>
+<!--</ScrollView>-->

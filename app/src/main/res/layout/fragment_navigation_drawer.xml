@@ -1,0 +1,20 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:dividerHeight="1dp"
+    android:paddingTop="10dp"
+    android:background="@color/navigation"
+    tools:context=".NavigationDrawerFragment"
+    android:divider="@color/navigation_divider"
+    android:clickable="false" />
+
+    <!-- just draw a red line -->
+    <!--
+    <View
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+        -->
+
+

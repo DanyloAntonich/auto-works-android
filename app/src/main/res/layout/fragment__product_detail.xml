@@ -1,0 +1,325 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        style="@style/GenericProgressBackground"
+        android:id="@+id/productDetailLoadingPanel"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            style="@style/GenericProgressIndicator"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/cart_layout_banner">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:id="@+id/imageView4"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@drawable/forgot_bannerbackground" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView5"-->
+            <!--android:src="@drawable/forgot_logo"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="10dp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/detail2_back"-->
+            <!--android:src="@drawable/forgot_menu"-->
+            <!--android:layout_margin="20dp" />-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/detail2_menu"-->
+            <!--android:src="@drawable/cart_menu"-->
+            <!--android:layout_marginStart="50dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_marginBottom="20dp"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/detail2_cat"-->
+            <!--android:src="@drawable/map_cart"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_alignTop="@+id/imageView5"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="28dp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/detail2_favorite"-->
+            <!--android:src="@drawable/cart_sidemenu"-->
+            <!--android:layout_alignBottom="@+id/detail2_menu"-->
+            <!--android:layout_toLeftOf="@+id/detail2_cat"-->
+            <!--android:layout_toStartOf="@+id/detail2_cat"-->
+            <!--android:layout_marginEnd="5dp" />-->
+
+    <!--</RelativeLayout>-->
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/cart_layout_banner">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:id="@+id/detail2_item_layout"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/product_detail_image"
+            android:src="@drawable/no_product_image"
+            android:layout_centerHorizontal="true" />
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView3"-->
+            <!--android:src="@drawable/special_dot"-->
+            <!--android:layout_below="@+id/product_detail_image"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Apple Macbook Pro MD101LL/A 13.3&quot; Intel Core i5 2.5GHz 4GB Mac "
+            android:id="@+id/product_detail_tittle"
+            android:textColor="#000"
+            android:textStyle="bold|normal"
+            android:textSize="10dp"
+            android:textIsSelectable="false"
+            android:layout_below="@+id/product_detail_image"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_detail_tittle"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1,099.00"
+                android:id="@+id/product_detail_oldprice"
+                android:textColor="#959595"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:enabled="false"
+                android:autoText="false"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$900.00"
+                android:id="@+id/product_detail_newprice"
+                android:textColor="#ff3f3f"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/product_detail_oldprice"
+                android:layout_toRightOf="@+id/product_detail_oldprice"
+                android:layout_toEndOf="@+id/product_detail_oldprice"
+                android:layout_marginStart="10dp" />
+
+        </RelativeLayout>
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Free shipping"-->
+            <!--android:id="@+id/product_detail_shipping"-->
+            <!--android:textColor="#0072bc"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:layout_alignTop="@+id/product_detail_newprice"-->
+            <!--android:layout_toRightOf="@+id/product_detail_newprice"-->
+            <!--android:layout_toEndOf="@+id/product_detail_newprice"-->
+            <!--android:layout_marginStart="10dp" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/detail2_item_layout"
+        android:layout_marginTop="-20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/detail2_middle_layout"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feature:"
+            android:id="@+id/textView"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:textSize="14dp"
+            android:textColor="#ed3a24"
+            android:layout_marginStart="15dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/detail2_split" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:maxHeight="300dp"
+            android:id="@+id/product_detail_feature_wrapper">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="•  2.6 GHz Dual-Core Intel Core i5 Processor (Turbo Boost up to 3.1 GHz, 3 MB shared L3 cache)\n •  8 GB 1600 MHz DDR3L RAM; 128 GB PCIe-based Flash Storage 13.3-inch IPS Retina Display, 2560-by-1600 resolution Intel Iris Graphics\n •  OS X Mavericks, Up to 9 Hours of Battery Life"
+                android:id="@+id/product_detail_description"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </ScrollView>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ed3a24"
+            android:layout_below="@+id/product_detail_feature_wrapper"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/detail2_add_cart">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_cart"
+                android:id="@+id/detail2_add_cart_text"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ed3a24"
+            android:layout_below="@+id/detail2_add_cart"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/detail2_add_wish">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_wishlist"
+                android:id="@+id/detail2_add_wish_text"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            android:src="@drawable/cart_split"
+            android:layout_below="@+id/detail2_add_wish"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail2_middle_layout"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:src="@drawable/detail2_split"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More like this:"
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:textSize="14dp"
+            android:textColor="#ed3a24"
+            android:layout_marginStart="15dp" />
+
+        <com.meetme.android.horizontallistview.HorizontalListView
+            android:id="@+id/relatedProducts"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="25dp"
+            android:divider="#fff"
+            android:fadingEdgeLength="5dp"
+            android:requiresFadingEdge="horizontal"
+            widget:dividerWidth="10dp"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listRelatedProductDots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="270dp">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>
+
